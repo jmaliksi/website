@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cool Stuff by Joe Maliksi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/custom_css.css" rel="stylesheet" type="text/css" />
+
+<script src="js/dandelions.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+function init() {
+	//ResponsiveNavbar.init();
+	Dandelions.init();
+}
+</script>
+</head>
+
+<body onload="init()">
+<div id="top-pic" >
+	<a href="index.html" id="hidden-top" name="top">&nbsp;</a>
+	<div class="container" id="navigation"><ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="coding.html">Coding</a></li>
+		<li><a href="artdesign.html">Art&amp;Design</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li id="goto"><a href="">GOTO</a></li>
+	</ul></div>
+</div>
+<div class="container">
+	<div id="subnav-holder">
+		<span id="subnav">
+			<ul>
+			<li>@Home</li>
+			</ul>
+		</span>
+	</div>
+</div>
+
+<div class="container white">
+	<div class="row">
+		<div class="span10 offset1 visible-desktop">
+			<h1><em>//TODO finish porting dandelions instead of playing with the vector map</em></h1>
+			<center>
+				<canvas id="dandelions" width="700" height="400" class="visible-desktop">
+				</canvas>
+				<p><em><small>Double click to spawn some particles. Click and drag to mess around with the vector map.</small></em></p>
+			</center>
+		</div>
+	</div>
+	<div class="row">
+	<div class="span10 offset1">
+		<h1>hello.</h1>
+		<p>My name is Joseph Aldrich Javier Maliksi, but it's easier to call me Joe. I'm into <a href="artdesign.html" class="cool-link round">digital design</a> and <a href="coding.html" class="cool-link round">computer programming</a>.      </p>
+		<p>This is my portfolio. It's under construction, but you can still get the gist of things. Just don't be surprised if there's a lorem ipsum still around, or if the formatting is completely screwy on mobile.</p>
+		<p>It's best experienced with Javascript and CSS enabled.</p>
+		<p>&nbsp;</p>
+	</div>
+
+	</div>
+</div>
+
+<div id="push"></div>
+<div class="container" id="footer">
+	<a href="index.html">Home</a> | <a href="contact.html">Contact</a><br />
+	&copy; Joseph Maliksi 2013
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cool Stuff by Joe Maliksi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/custom_css.css" rel="stylesheet" type="text/css" />
+
+<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+<script src="js/project-list.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/menu.js"></script>
+
+</head>
+
+<body onload="ResponsiveNavbar.init()">
+<div id="top-pic" >
+	<a href="index.html" id="hidden-top" name="top">&nbsp;</a>
+	<div class="container" id="navigation"><ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="coding.html">Coding</a></li>
+		<li><a href="artdesign.html">Art&amp;Design</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li id="goto"><a href="#" >GOTO</a></li>
+	</ul></div>
+</div>
+<div class="container">
+	<div id="subnav-holder">
+		<span id="subnav">
+			<ul>
+			<li>@Coding:</li>
+			<li><a href="#games">Games</a></li>
+			<li><a href="#protos">Prototypes</a></li>
+			<li><a href="#graphics">Graphics</a></li>
+			<li><a href="#math">Mathematics</a></li>
+			</ul>
+		</span>
+	</div>
+</div>
+
+<div class="container white" ng-app>
+	<div class="row">
+		<div class="span10 offset1" ng-controller="ProjectListCtrl">
+			<br/>
+			<h1 ><span class="muted sf-movie-poster">Programming Projects</span> <br class="hidden-desktop"/><small class="lead black-text">Some school and indie projects I've had a hand in</small></h1>
+			<br class="hidden-desktop"/>
+			<p>Note: Several of these projects were hosted on my Georgia Tech account which has long been deactivated, so some projects may have dead links until I can find another copy of their source.</p>
+			<hr/>
+			<h2><a name="games">Games</a></h2>
+			<div ng-repeat="item in games">
+				<div class="row">
+					<div class="span10">
+						<h3>{{item.name}}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<a href="{{item.link}}" target="_blank"><img src="{{item.img}}"/></a>
+					</div>
+					<div class="span7">
+						<p ng-repeat="para in item.desc">{{para}}</p>
+						<p><a href="{{item.link}}" target="_blank">{{item.action}}</a></p>
+						<p><a href="#top" class="to-top">back to top</a></p>
+					</div>
+				</div>
+				<hr/>
+			</div>
+
+			<h2><a name="protos">Prototypes</a></h2>
+			<div ng-repeat="item in protos">
+				<div class="row">
+					<div class="span10">
+						<h3>{{item.name}}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<a href="{{item.link}}" target="_blank"><img src="{{item.img}}"/></a>
+					</div>
+					<div class="span7">
+						<p ng-repeat="para in item.desc">{{para}}</p>
+						<p><a href="{{item.link}}" target="_blank">{{item.action}}</a></p>
+						<p><a href="#top" class="to-top">back to top</a></p>
+					</div>
+				</div>
+				<hr/>
+			</div>
+
+			<h2><a name="graphics">Graphics</a></h2>
+			<div ng-repeat="item in graphics">
+				<div class="row">
+					<div class="span10">
+						<h3>{{item.name}}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<a href="{{item.link}}" target="_blank"><img src="{{item.img}}"/></a>
+					</div>
+					<div class="span7">
+						<p ng-repeat="para in item.desc">{{para}}</p>
+						<p><a href="{{item.link}}" target="_blank">{{item.action}}</a></p>
+						<p><a href="#top" class="to-top">back to top</a></p>
+					</div>
+				</div>
+				<hr/>
+			</div>
+
+			<h2><a name="math">Math</a></h2>
+			<div ng-repeat="item in math">
+				<div class="row">
+					<div class="span10">
+						<h3>{{item.name}}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<a href="{{item.link}}" target="_blank"><img src="{{item.img}}"/></a>
+					</div>
+					<div class="span7">
+						<p ng-repeat="para in item.desc">{{para}}</p>
+						<p><a href="{{item.link}}" target="_blank">{{item.action}}</a></p>
+						<p><a href="#top" class="to-top">back to top</a></p>
+					</div>
+				</div>
+				<hr/>
+			</div>
+			<p><a href="#top" class="to-top">back to top</a></p>
+		</div>
+	</div>
+</div>
+
+<div id="push"></div>
+<div class="container" id="footer">
+	<a href="index.html">Home</a> | <a href="contact.html">Contact</a><br />
+	&copy; Joseph Maliksi 2013
+</div>
+</body>
+</html>
+

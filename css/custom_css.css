@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SFMoviePosterCondensed';
+    src: url('SF Movie Poster Condensed.ttf');
+}
+
+span.sf-movie-poster {
+	font-family: 'SFMoviePosterCondensed';
+	font-size: 70pt;
+	line-height: 90%;
+	letter-spacing: 4px;
+}
+
+html,
+body {
+	height: 100%;
+	background: url(../img/back.jpg) repeat-x;
+	background-color: #936B45;
+}
+
+@media (max-width: 767px) {
+	html,
+	body {
+		background-color: #fff;
+		background: none;
+	}
+}
+
+.align-bottom {
+	height: 100%;
+	vertical-align: text-bottom;
+}
+
+.black-text {
+	color: #000;
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-content {
+	text-align: center;
+}
+
+.contact-label {
+	font-size: 10px;
+	font-weight: normal;
+	color: #177A6F;
+	text-transform: uppercase;
+}
+
+dl.dl-contact dt {
+	font-size: 10px;
+	font-weight: normal;
+	color: #177A6F;
+	text-transform: uppercase;
+	width: auto !important;
+}
+
+dl.dl-contact dd {
+	margin-left: 60px;
+}
+
+@media (max-width: 767px) {
+	dl.dl-contact dt {
+		font-size: 11px;
+		font-weight: bold;
+		color: #000;
+	}
+	dl.dl-contact dd {
+		margin-left: 20px;
+	}
+}
+
+.dark-grey {
+	background-color: #333;
+}
+
+.display-none {
+	display: none;
+}
+
+.img-label {
+	min-height: 5em;
+}
+
+.img-small {
+	width: 60px !important;
+	height: 60px;
+	display: list-item;
+	float: left !important;
+}
+
+.light-grey {
+	background-color: #ccc;
+}
+
+.round {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.thumbnail {
+	border: 0;
+	-webkit-box-shadow: none !important;
+       -moz-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+.white {
+	background-color: #fff;
+}
+
+#content {
+	/*min-height:100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;*/
+}
+
+a{
+	color: #4ABCB0;
+}
+
+a:hover{
+	color: #084F48;
+}
+
+a.cool-link:hover{
+	color: #E2A87D;
+	font-size: larger;
+	text-decoration: none;
+	background-color: #803D0C;
+	padding: 2px;
+	padding-right: 5px;
+	padding-left:5px;
+}
+
+a.cool-link{
+	color: #803D0C;
+	font-size: larger;
+	text-decoration: none;
+	background-color: #E2A87D;
+	padding: 2px;
+	padding-right: 5px;
+	padding-left:5px;
+}
+
+a.to-top{
+	color: #936B45;
+	font-size:11px;
+}
+
+dd.work-info {
+	font-size:12px;
+	font-weight:bold;
+}
+
+dt.work-title{
+	white-space: normal;
+	font-style: italic;
+	font-size:12px;
+	font-weight:normal;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+}
+
+@media (max-width: 767px( {
+	h1 small:before {
+		content: '<br/>';
+	}
+}
+
+h2 a,
+h2 a:hover {
+	color: #CCC;
+	text-decoration: none;
+	font-family: 'SFMoviePosterCondensed';
+	font-size: 60pt;
+	line-height: 90%;
+	letter-spacing: 4px;
+}
+
+span.backwards {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+
+ul.columned {
+}
+
+ul.columned li {
+	width: 20em;
+	vertical-align: baseline;
+}
+
+ul.columned li:before {
+	content: '\25e6\ ';
+	margin-left: -0.3em;
+}
+
+#push,
+#footer {
+	height: 40px;
+}
+
+#footer {
+	background-color:#2B545A;
+	color: #69BCB4;
+	bottom: 0px;
+	font-size: 11px;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	#footer {
+		background-color: white;
+		border: solid thin black;
+	}
+}
+
+/* NAVIGATION BAR RELATED CSS */
+
+a#hidden-top{
+	display: block;
+	text-decoration: none;
+	height: 150px;
+	position: absolute;
+}
+
+#navigation{
+	position: relative;
+	top: 150px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	vertical-align: baseline;
+}
+
+#navigation ul{
+	position: absolute;
+	bottom: 0px;
+	border-left: solid thin black;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 4px;
+	background-color:#fff;
+
+//	border-top-left-radius: 20px;
+}
+
+#navigation li{
+	list-style: none;
+	display: inline;
+	border-right: solid thin black;
+	padding-right: 4px;
+	//background-color:#FFF;
+}
+
+#navigation li a{
+	text-decoration: none;
+	color: #793B07;
+	padding-left: 25px;
+	padding-right: 25px;
+	//background-color:#FFF;
+}
+
+#navigation li a:hover{
+	background-color: #E2A87D;
+}
+
+#subnav-holder{
+	position: relative;
+	height: 20px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+#subnav{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #0C464E;
+	color: #69BCB4;
+	font-size: small;
+	padding-right: 40px;
+	padding-top: 2px;
+	margin: 0;
+
+	//border-bottom-left-radius: 20px;
+	//border-bottom-right-radius: 20px;
+}
+
+#subnav ul{
+	margin: 0;
+	padding-left: 40px;
+}
+
+#subnav li{
+	margin: 0;
+	list-style: none;
+	display: inline;
+}
+
+#subnav li a{
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: thin solid #245B56;
+	border-right: thin solid #245B56;
+	color: #EEF;
+	text-decoration: none;
+}
+
+#subnav li a:hover{
+	background-color: #177A6F;
+}
+
+#top-pic{
+	top: 0px;
+	background: url(../img/banner.png) repeat-x center;
+	width: 100%;
+	height: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom: thin black solid;
+	min-width:770px;
+}
+
+@media (min-width: 767px) {
+	#navigation li {
+		display: inline !important;
+	}
+	li#goto {
+		display:none !important;
+	}
+
+}
+
+@media (max-width: 767px) {
+	#navigation li {
+		display: none;
+	}
+
+	#goto {
+		display: list-item !important;;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	#goto a:hover {
+		background-color: #fff !important;
+	}
+
+	#top-pic:hover #navigation li {
+		display: list-item !important;
+	}
+
+	#navigation ul {
+		border-top: solid thin black;
+	}
+
+	#top-pic {
+		background: url(../img/banner_min.png) repeat-x center;
+		min-width:0;
+		overflow: hidden;
+	}
+
+	#subnav {
+		background-color: white;
+		border-left: solid thin black;
+		border-right: solid thin black;
+		border-bottom: solid thin black;
+		color: #000;
+	}
+
+	#subnav li a {
+		color: #69BCB4;
+	}
+}
+
+
+/* END NAVBAR STUFF */

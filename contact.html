@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cool Stuff by Joe Maliksi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/custom_css.css" rel="stylesheet" type="text/css" />
+
+<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/menu.js"></script>
+
+</head>
+
+<body onload="ResponsiveNavbar.init()">
+<div id="top-pic" >
+	<a href="index.html" id="hidden-top" name="top">&nbsp;</a>
+	<div class="container" id="navigation"><ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="coding.html">Coding</a></li>
+		<li><a href="artdesign.html">Art&amp;Design</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li id="goto"><a href="#" >GOTO</a></li>
+	</ul></div>
+</div>
+<div class="container">
+	<div id="subnav-holder">
+		<span id="subnav">
+			<ul>
+			<li>@Contact</li>
+			</ul>
+		</span>
+	</div>
+</div>
+
+<div class="container white" ng-app>
+	<div class="row" ng-controller="ContactCtrl">
+		<br/>
+		<div class="span5 offset1">
+			<h1 class="muted">come talk.</h1>
+			<dl class="dl-horizontal dl-contact">
+				<dt>E-MAIL</dt>
+				<dd><a href="mailto:{{gmail()}}">{{gmail()}}</a></dd>
+				<dt>E-MAIL</dt>
+				<dd><a href="mailto:{{email()}}">{{email()}}</a></dd>
+				<dt>SKYPE</dt>
+				<dd>{{gmail()}}</dd>
+				<dt>GTALK</dt>
+				<dd>{{gmail()}}</dd>
+			</dl>
+		</div>
+		<div class="span5">
+			<h1 class="muted">or just stalk.</h1>
+			<dl class="dl-horizontal dl-contact">
+				<dt>FACEBOOK</dt>
+				<dd><a href="{{facebook()}}">{{facebook()}}</a></dd>
+				<dt>TWITTER</dt>
+				<dd><span class="backwards">noos gnimoc</span></dd>
+				<dt>BLOG</dt>
+				<dd><span class="backwards">noos gnimoc</span></dd>
+				<dt>LINKEDIN</dt>
+				<dd><a href="{{linkedin()}}">{{linkedin()}}</a></dd>
+			</div>
+		<br/>
+		</div>
+	</div>
+</div>
+
+<div id="push"></div>
+<div class="container" id="footer">
+	<a href="index.html">Home</a> | <a href="contact.html">Contact</a><br />
+	&copy; Joseph Maliksi 2013
+</div>
+</body>
+</html>
+
