@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "braggadocio";
+    src: url(911Fonts.com_BraggadocioRegular__-_911fonts.com-fonts-vPq1.ttf) format("truetype");
+}
+
+h1 {
+    font-family: "lora", serif;
+    text-align: center;
+}
+
+.poster {
+    font-family: "forum", serif;
+    line-height: 3;
+    text-align: center;
+}
+
+.content {
+    font-family: "open sans", helvetica, arial, sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: justify;
+    width: 80%;
+}
+
+.spoiler {
+    display: none;
+}
+
+.spoiler_header {
+    font-family: "open sans", helvetica, arial, sans-serif;
+    font-size: 9pt;
+}
+
+.avatar_size_quote > img {
+    max-width: 50px;
+}
+
+.quote_body {
+    font-size: 10pt;
+    font-style: italic;
+    padding: 10px 10px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
